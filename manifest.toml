@@ -51,7 +51,7 @@ ram.runtime = "50M"
     arm64.url = "https://github.com/StarFleetCPTN/GoMFT/releases/download/v0.2.11/gomft-v0.2.11-linux-arm64"
     arm64.sha256 = "f4d4d3a9d35f3a800d768ba6d4808e70627eed7ad95c46ef781181d73ea105dd"
     in_subdir = false
-    remame = "gomft"
+    rename = "gomft"
 
     # autoupdate.strategy = "latest_github_tag"
 
