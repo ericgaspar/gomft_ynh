@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+GoMFT est une application web de transfert de fichiers gérée, construite avec Go, qui s'appuie sur rclone pour offrir de solides capacités de transfert de fichiers. Elle fournit une interface conviviale pour configurer, planifier et surveiller les transferts de fichiers entre différents fournisseurs de stockage.
