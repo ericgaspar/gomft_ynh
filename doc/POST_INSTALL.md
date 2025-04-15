@@ -1,7 +1,5 @@
-This is a dummy disclaimer to display after the install
+Log in with the default admin account:
 
-The app url is <https://__DOMAIN____PATH__>
-
-The app install dir is `__INSTALL_DIR__`
-
-The app id is `__ID__`
+    Email: admin@example.com
+    Password: admin
+    Important: Change this password immediately after first login
