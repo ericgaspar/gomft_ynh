@@ -12,6 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 key=$(ynh_string_random --length=24)
+totp_key=$(ynh_string_random --length=32)
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -20,6 +21,8 @@ ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
+
+chmod +x "$install_dir/gomft"
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -39,7 +42,7 @@ ynh_config_add_nginx
 # Create a dedicated systemd config
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Managed File Transfer" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
